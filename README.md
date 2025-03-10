@@ -7,6 +7,23 @@ git clone git@github.com:wiredmatt/sdl3-cmake-modules.git --depth=1 --recurse-su
 cmake -B build && cmake --build build && ./build/my_game
 ```
 
+## Setting the target version for the libraries
+
+By default this repository assumes you're working with the latest code available in the main branch of each library. If you are not, modify the file [.gitmodules](./.gitmodules), and set the `branch` property of each entry to point to the version you want to work with, like so:
+
+```ini
+[submodule "vendor/SDL"]
+	path = vendor/SDL
+	url = git@github.com:libsdl-org/SDL.git
+	branch = release-3.2.8 # set this to whatever version you want.
+```
+
+## Updating the libraries
+
+```sh
+git submodule update --remote # remember to rebuild the project after updating!
+```
+
 ## Adding more libraries
 
 ### 1. Cloning the library
