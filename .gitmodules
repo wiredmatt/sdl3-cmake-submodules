@@ -1,0 +1,15 @@
+[submodule "vendor/SDL"]
+	path = vendor/SDL
+	url = git@github.com:libsdl-org/SDL.git
+	# if you want to use a specific branch, you can specify it here.
+	# i recommend using release tags (https://github.com/libsdl-org/SDL/releases)
+	# branch = release-3.2.8
+[submodule "vendor/SDL_image"]
+	path = vendor/SDL_image
+	url = git@github.com:libsdl-org/SDL_image.git
+[submodule "vendor/SDL_ttf"]
+	path = vendor/SDL_ttf
+	url = git@github.com:libsdl-org/SDL_ttf.git
+[submodule "vendor/SDL_mixer"]
+	path = vendor/SDL_mixer
+	url = git@github.com:libsdl-org/SDL_mixer.git
